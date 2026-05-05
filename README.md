@@ -102,20 +102,25 @@ IR technology is used in a wide range of wireless applications which includes re
 ## STM 32 CUBE PROGRAM
 
 ```
-#include"stdio.h" 
-#if defined(__GNUC__) 
-#define PUTCHAR_PROTOTYPE int __io_putchar(int ch) 
-#endif
 
-printf("LATHIKA SREE R\n");
-printf("212224040169\n"); 
-printf("SAVEETHA ENGINEERING COLLEGE\n"); 
-HAL_Delay(500);
-
-PUTCHAR_PROTOTYPE
+#include "main.h"
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+int main(void)
 {
-HAL_UART_Transmit(&huart2,(uint8_t*)&ch,1,0xFFFF); 
-return ch; 
+HAL_Init();
+SystemClock_Config();
+MX_GPIO_Init();
+
+while (1)
+  {
+	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_SET);
+	  HAL_Delay(5000);
+	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_RESET);
+	  HAL_Delay(5000);
+
+  }
+
 }
 
 ```
