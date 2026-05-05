@@ -1,13 +1,13 @@
 # EXPERIMENT-02-INTERFACING-A-DIGITAL-INPUT-OUTPUT-TO-IOT-DEVELOPMENT-BOARD
 
 
-**DATE:**
+**DATE: 05.05.2026**
 
-**NAME:**
+**NAME: LATHIKA SREE R**
 
-**ROLL NO:**
+**ROLL NO: 212224040169**
 
-**DEPARTMENT:**
+**DEPARTMENT: CSE**
 
 ## Aim
 
@@ -102,10 +102,35 @@ IR technology is used in a wide range of wireless applications which includes re
 ## STM 32 CUBE PROGRAM
 
 ```
-// Your STM 32 CUBE Program code here
+#include"stdio.h" 
+#if defined(__GNUC__) 
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch) 
+#endif
+
+printf("LATHIKA SREE R\n");
+printf("212224040169\n"); 
+printf("SAVEETHA ENGINEERING COLLEGE\n"); 
+HAL_Delay(500);
+
+PUTCHAR_PROTOTYPE
+{
+HAL_UART_Transmit(&huart2,(uint8_t*)&ch,1,0xFFFF); 
+return ch; 
+}
+
 ```
 
 ## OUTPUT
+
+LED OFF
+
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/fa1533ff-9b59-4053-a241-59fcd7749e91" />
+
+
+LED ON 
+
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/c9f1179e-3c9f-4da3-8a3b-524f86c78b21" />
+
 
 ## Result
 
