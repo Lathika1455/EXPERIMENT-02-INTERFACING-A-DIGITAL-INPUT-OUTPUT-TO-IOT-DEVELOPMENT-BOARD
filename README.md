@@ -338,13 +338,13 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 ## OUTPUT
 
-LED OFF
+OFF
 
 <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/7debcb64-267a-4785-9903-40110b13cd19" />
 
 
 
-LED ON 
+ON 
 
 <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/7cc7c3e1-7ea0-4cd7-a780-02ba18d89281" />
 
